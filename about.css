@@ -1,0 +1,119 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url(cute.jpg); /* Light background color for the body */
+    color: #333;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.37); /* Header background color */
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.logo {
+    width: 60px; /* Adjust size as needed */
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* About Circle Styles */
+.about-circle {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 50%;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start hidden */
+    animation: scaleIn 1s forwards, fadeInText 2s forwards; /* Apply animations */
+    animation-delay: 1s; /* Delay for each animation */
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0); /* Start from scale 0 */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: scale(1); /* Scale to full size */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* About Circle Header */
+.about-circle h2 {
+    font-family: 'Pacifico', cursive;
+    color: #4CAF50;
+}
+
+/* About Circle Paragraph */
+.about-circle p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    line-height: 1.6;
+    opacity: 0; /* Start hidden */
+    animation: fadeInText 3s forwards; /* Apply animation */
+    animation-delay: 1s; /* Delay before starting the animation */
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

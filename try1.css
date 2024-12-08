@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Noto Serif JP', serif; /* Ghibli-inspired font */
+  background: #e1f7d5; /* Light pastel green for Ghibli feel */
+  color: #333;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1e0b6; /* Soft yellow for hover effect */
+}
+
+/* Logo Styles */
+.logo {
+  height: 40px; /* Adjust based on your logo size */
+  width: auto;
+  margin-right: 20px; /* Space between the logo and the navigation */
+}
+
+/* Slide Styles */
+.slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.slide1 {
+  background: url(wow.jpg) no-repeat center center/cover;
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.slide1 h1 {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInText 1.5s ease-in-out forwards, pulse 2s ease-in-out infinite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Slide Title */
+.section-title {
+  font-size: 2.5rem;
+  color: #6b705c;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card Styles */
+.card {
+  width: 250px;
+  height: 300px;
+  perspective: 1000px; /* Enable 3D space for flip effect */
+  cursor: pointer;
+  position: relative;
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Front Card */
+.card-front {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: url(blue.jpg);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Back Card */
+.card-back {
+  font-size: 1rem;
+  background: #9aab5d;
+  transform: rotateY(180deg);
+  border: 1px solid white;
+}
+
+/* Flip Animation */
+.card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #6b705c;
+  color: white;
+  font-size: 0.9em;
+}
