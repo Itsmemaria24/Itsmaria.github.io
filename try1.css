@@ -22,7 +22,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     background: rgba(0, 128, 0, 0.6); /* Green with transparency */
     color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@ header a:hover {
 .slide {
     position: relative;
     height: 100vh;
-    background: url(wow.jpg) no-repeat center center/cover;
+    background: url('wow.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,26 +71,6 @@ header a:hover {
     font-size: 4rem;
     color: white;
     animation: fadeInText 2s ease-out;
-}
-
-/* Loop Animation for Slide 1 Text */
-@keyframes loopTextAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-
-.slide1 h1 {
-  animation: loopTextAnimation 4s infinite ease-in-out; /* Loop animation */
 }
 
 .slide .pulse {
@@ -130,39 +110,11 @@ header a:hover {
     margin-top: 30px;
 }
 
-/* Slide Animation for Cards in Slide 2 */
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.card-container a {
-  animation: slideInFromLeft 1s ease-out forwards; /* First card sliding from left */
-}
-
-.card-container a:nth-child(2) {
-  animation: slideInFromRight 1s ease-out forwards; /* Second card sliding from right */
-  animation-delay: 0.5s; /* Delay for the second card */
-}
-
 .card {
     width: 250px;
     height: 350px;
     margin: 20px;
-    background-color:white;
+    background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
