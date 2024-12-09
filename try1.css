@@ -22,7 +22,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     background: rgba(0, 128, 0, 0.6); /* Green with transparency */
     color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
