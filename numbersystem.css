@@ -1,7 +1,7 @@
-/* Global Styles */
+
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Y2K-inspired font */
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     background: url(yut.jpeg);
     color: #333;
     text-align: center;
@@ -21,7 +21,7 @@ header nav {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Space between logo and nav links */
+    justify-content: space-between; 
     padding: 10px 0;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -34,7 +34,7 @@ header nav .logo {
 }
 
 header nav .logo img {
-    width: 40px; /* Adjust logo size */
+    width: 40px;
     height: auto;
 }
 
@@ -48,13 +48,13 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #f1e0b6; /* Soft yellow */
+    color: #f1e0b6; 
 }
 
 .title {
     font-size: 2.5rem;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-    margin-top: 70px; /* Adjust to avoid nav overlap */
+    margin-top: 70px; 
 }
 
 .subtitle {
@@ -63,7 +63,7 @@ header nav a:hover {
     -webkit-text-stroke: 1px, black;
 }
 
-/* Converter Section */
+
 .converter-container {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@ header nav a:hover {
     margin: 30px 20px;
 }
 
-/* Shape Box Styling */
+
 .shape-box {
     width: 200px;
     height: 200px;
@@ -89,7 +89,7 @@ header nav a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Animation */
+
 .shape-box:hover {
     transform: scale(1);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(255, 255, 255, 0.6);
