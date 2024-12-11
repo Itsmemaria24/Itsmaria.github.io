@@ -1,13 +1,13 @@
-/* General Styling */
+
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(bir.jpg) no-repeat center center fixed; /* Set the background image */
-    background-size: cover; /* Ensures the background covers the entire page */
+    background: url(bir.jpg) no-repeat center center fixed; 
+    background-size: cover; 
 }
 
-/* Container */
+
 .container {
     width: 100%;
     height: 100vh;
@@ -18,14 +18,14 @@ body {
     overflow: hidden;
 }
 
-/* Header with Navigation */
+
 header {
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    background-color: rgba(0, 0, 0, 0.5); 
     width: 100%;
     height: 60px;
     padding: 10px 0;
     text-align: center;
-    position: fixed; /* Make the header sticky */
+    position: fixed; 
     top: 0;
     left: 0;
     z-index: 10;
@@ -35,11 +35,11 @@ header {
 }
 
 .logo-container {
-    margin-left: 20px; /* Adjust logo positioning */
+    margin-left: 20px; 
 }
 
 .logo {
-    height: 40px; /* Adjust logo size */
+    height: 40px; 
     width: auto;
 }
 
@@ -71,26 +71,26 @@ header {
     color: #ffd700;
 }
 
-/* Title Section */
+
 .title {
     font-size: 3em;
     color: white;
     font-family: 'Sacramento', cursive;
     letter-spacing: 2px;
     animation: fadeIn 3s ease-in-out;
-    margin-top: 100px; /* Adjusted space for the fixed navigation bar */
+    margin-top: 100px; 
 }
 
-/* Content Section */
+
 .content {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     width: 80%;
-    margin-top: 120px; /* Space for the header */
+    margin-top: 120px; 
 }
 
-/* Left Side */
+
 .left-side {
     width: 50%;
     text-align: left;
@@ -99,10 +99,10 @@ header {
 .description {
     font-size: 1.2em;
     line-height: 1.6;
-    color: black; /* Change the text color to black */
+    color: black; 
 }
 
-/* Animated Title Text */
+
 .animated-text {
     font-size: 2.5em;
     font-family: 'Sacramento', cursive;
@@ -110,31 +110,30 @@ header {
     animation: fadeIn 3s ease-in-out, slideInLeft 1.5s ease-out forwards;
 }
 
-/* Animated Looping Text */
+
 .loop-text {
     font-size: 1.2em;
     color: black;
     animation: bounce 2s infinite;
 }
 
-/* Right Side (Square Image with Loop Animation) */
 .right-side {
     width: 50%;
     text-align: center;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center; 
 }
 
 .animated-image {
-    width: 80%; /* Adjust the width to make the image smaller */
-    max-width: 300px; /* Set a smaller maximum width */
-    height: 100%; /* Ensure the height is equal to width to make it square */
-    max-height: 300px; /* Set a max-height to maintain the square shape */
-    object-fit: cover; /* Ensures the image fills the square without distortion */
+    width: 80%; 
+    max-width: 300px; 
+    height: 100%; 
+    max-height: 300px; 
+    object-fit: cover; 
     animation: scaleUp 3s ease-out, fadeIn 3s ease-in-out, rotateLoop 4s linear infinite;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -171,27 +170,27 @@ header {
     }
 }
 
-/* Looping Animation for Image */
+
 @keyframes rotateLoop {
     0% {
         transform: rotate(0deg);
     }
     50% {
-        transform: rotate(15deg); /* Slight rotation for effect */
+        transform: rotate(15deg); 
     }
     100% {
         transform: rotate(0deg);
     }
 }
 
-/* Media Queries for Mobile Responsiveness */
+/
 
-/* For devices with screen width less than 768px (Tablets & below) */
+
 @media only screen and (max-width: 768px) {
     header {
-        height: auto; /* Adjust the header height */
+        height: auto; 
         padding: 20px 10px;
-        flex-direction: column; /* Stack the navigation links vertically */
+        flex-direction: column; 
     }
 
     .nav-bar ul {
@@ -210,7 +209,7 @@ header {
 
     .title {
         font-size: 2.5em;
-        margin-top: 150px; /* Adjust space for sticky header */
+        margin-top: 150px; 
     }
 
     .content {
@@ -218,7 +217,7 @@ header {
         align-items: center;
         padding: 20px;
         width: 90%;
-        margin-top: 150px; /* Adjust space for header */
+        margin-top: 150px; 
     }
 
     .left-side, .right-side {
@@ -227,12 +226,12 @@ header {
     }
 
     .animated-image {
-        width: 90%; /* Smaller image width on smaller screens */
-        max-width: 250px; /* Set a smaller max width */
+        width: 90%; 
+        max-width: 250px;
     }
 }
 
-/* For devices with screen width less than 480px (Mobile) */
+
 @media only screen and (max-width: 480px) {
     .nav-bar ul li a {
         font-size: 1em;
@@ -240,7 +239,7 @@ header {
 
     .title {
         font-size: 2em;
-        margin-top: 180px; /* Adjust for header */
+        margin-top: 180px; 
     }
 
     .description {
