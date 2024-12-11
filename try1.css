@@ -1,4 +1,4 @@
-/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +11,12 @@ html {
 }
 
 body {
-    background-color: #b7e0c6; /* Light pastel green background */
+    background-color: #b7e0c6; 
     font-size: 16px;
     line-height: 1.5;
     color: #333;
 }
 
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -40,10 +39,10 @@ header nav {
 }
 
 header img.logo {
-    height: 50px; /* Adjust logo height */
+    height: 50px; 
     width: auto;
     object-fit: contain;
-    margin-left: 20px;  /* Adjust for spacing */
+    margin-left: 20px; 
 }
 
 header a {
@@ -55,8 +54,6 @@ header a {
 header a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-
-/* Hero Section */
 .slide {
     position: relative;
     height: 100vh;
@@ -77,7 +74,6 @@ header a:hover {
     animation: pulse 2s infinite;
 }
 
-/* Animations */
 @keyframes fadeInText {
     0% {
         opacity: 0;
@@ -100,8 +96,6 @@ header a:hover {
         transform: scale(1);
     }
 }
-
-/* Card Layout */
 .card-container {
     display: flex;
     justify-content: center;
@@ -157,8 +151,6 @@ header a:hover {
 .card-container .dot.active {
     background-color: #333;
 }
-
-/* Footer */
 footer {
     text-align: center;
     padding: 30px;
